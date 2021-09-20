@@ -31,9 +31,11 @@ public class MainActivity extends AppCompatActivity {
         getImgBreed();
     }
 
+    //Inicio del servicio
     ApiInterface service = ApiClient.getRetrofit().create(ApiInterface.class);
 
     public void getAllBreeds() {
+
         //Llamada para traer datos
         Call<ArrayList<DataModel>> call = service.getListBreed();
         call.enqueue(new Callback<ArrayList<DataModel>>() {
@@ -51,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    //Data de imagen
     public void getImgBreed() {
         Call<DataModel> callImg = service.getImgRandom();
         callImg.enqueue(new Callback<DataModel>() {

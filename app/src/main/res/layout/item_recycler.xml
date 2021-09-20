@@ -23,6 +23,6 @@
             android:layout_height="272dp"
             android:layout_gravity="center|center_horizontal|center_vertical"
             android:contentDescription="@string/dog_breed"
-            app:srcCompat="@drawable/ic_launcher_background" />
+            app:srcCompat="@drawable/ic_launcher_foreground" />
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
